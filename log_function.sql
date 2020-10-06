@@ -14,7 +14,7 @@ _iss_horizon_buffer_end_point geometry;
 _iss_horizon_intersection_buffers_points_start_end geometry;
 _antimeridian_A geometry;
 _antimeridian_B geometry;
-_shift_longitude boolean;
+_shift_longitude boolean := false;
 begin
 
 insert into sstv_tx_log VALUES
