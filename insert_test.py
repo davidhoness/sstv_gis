@@ -37,7 +37,7 @@ def insert_row(image_no, qr_code_data, start_time, start_lat, start_long, stop_t
 
 
 
-with open('experiment data.csv', mode='r') as csv_file:
+with open('experiment_data.csv', mode='r') as csv_file:
     csv_reader = csv.DictReader(csv_file)
     rows = list(csv_reader)
     totalrows = len(rows)
