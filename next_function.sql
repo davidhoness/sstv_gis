@@ -51,6 +51,6 @@ inner join sstv_tx_log
 on sstv_tx_log."ID" = sstv_tx_geometries."LOG_ID"
 where ST_Intersects(_predicted_iss_horizon_intersection_buffers_points_start_end, sstv_tx_geometries.iss_horizon_intersection_buffers_points_start_end)
 group by sstv_tx_log.image_no
-order by area_km_sq asc;
+order by area_km_sq desc;
 end;
 $$
