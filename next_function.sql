@@ -1,4 +1,5 @@
-﻿CREATE OR REPLACE FUNCTION next_sstv_no(predicted_start_lat numeric, predicted_start_long numeric, predicted_stop_lat numeric, predicted_stop_long numeric, iss_horizon_dist_meters integer)
+﻿--DROP FUNCTION next_sstv_no(numeric,numeric,numeric,numeric,integer)
+CREATE OR REPLACE FUNCTION next_sstv_no(predicted_start_lat numeric, predicted_start_long numeric, predicted_stop_lat numeric, predicted_stop_long numeric, iss_horizon_dist_meters integer)
 returns table
 (image integer,
 area_km_sq float)
